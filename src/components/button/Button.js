@@ -14,16 +14,17 @@ export default class Button extends Component {
 
   static defaultProps = {
     className: '',
-    onClick: () => {},
+    onClick: () => {
+    },
   }
 
   render() {
     const { children, className, onClick } = this.props;
-
+    
     const classes = `button ${className}`
 
     return (
-      <button onClick={onClick} className={classes}>{children}</button>
+      <button onClick={onClick} className={classes}> {children} </button>
     );
   }
 
